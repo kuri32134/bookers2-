@@ -1,7 +1,9 @@
 <h2>Book detail</h2>
 <div>
   <p><%= image_tag 'sample-author1.jpg' %></p>
+  <%= link_to user_path do %>
   <p><%= @book.user.name %></p>
+  <% end %>
   <p><%= @book.title %></p>
   <p><%= @book.body %></p>
   <% if @book.user == current_user %>
