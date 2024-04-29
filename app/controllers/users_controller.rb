@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @books = Book.all
 
   end
 
