@@ -1,8 +1,8 @@
 <h2>User info</h2>
   <p><%= image_tag 'sample-author1.jpg' %></p>
-  <p>name：<%= current_user.name %></p>
-  <p>introduction：<%= current_user.introduction %></p>
-  <p><%= link_to 'edit', edit_user_path(current_user.id) %></p>
+  <p>name：<%= user.name %></p>
+  <p>introduction：<%= user.introduction %></p>
+  <p><%= link_to 'edit', edit_user_path(user.id) %></p>
 
 
 <h2>New book</h2>
