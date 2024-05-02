@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
-<h2>Editing book</h2>
+<h2>Editing Book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %>error prohibited this obj from being saved:
   <ul>
@@ -27,6 +27,6 @@
     </a>
   </div>
   <% if @book.user == current_user %>
-    <p><%= link_to "show", book_path(@book.id) %><a>|</a><%= link_to "back", books_path %></p>
+    <p><%= link_to "Show", book_path(@book.id) %><a>|</a><%= link_to "Back", books_path %></p>
   <% end %>
 <% end %>
